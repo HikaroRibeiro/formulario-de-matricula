@@ -24,6 +24,60 @@
 
                     <h1>Formulário de Matrícula</h1>
                     <p>Preencha os dados abaixo para matricular seu filho na esocla de educação infantil Estrelas do Amanhã.</p>
+
+                    <form enctype="multipart/form-data" method="post">
+                        <fieldset class="child-info">
+                            <legend>Informações da Criança</legend>
+
+                            <div class="input-wrapper">
+                                <label for="fullname">Nome Completo</label>
+                                <input 
+                                    type="text" 
+                                    id="fullname" 
+                                    name="fullname" 
+                                    required
+                                    placeholder="Digite o nome da criança">
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="birth">Data de Nascimento</label>
+                                <input 
+                                    type="date" 
+                                    id="birth"
+                                    name="birth"
+                                    lang="pt-BR">
+                            </div>
+                            
+                            <div class="select-wrapper">
+                                <label for="gender">Sexo</label>
+                                
+                                <select name="gender" id="gender">
+                                    <option value="female">Femino</option>
+                                    <option value="male">Masculino</option>
+                                    <option value="na">Prefiro não responder</option>
+                                </select>   
+                            </div>
+                            <div class="textarea-wrapper">
+                                <label for="medical-info">Informações Médicas</label>
+                                <textarea 
+                                    name="medical-info" 
+                                    id="medical-info" 
+                                    cols="30" 
+                                    rows="10" 
+                                    placeholder="Informe aqui qualquer informação médica relevante, como alergias, condições de saúde ou necessidades especiais."></textarea>
+                            </div>
+
+                            <div class="droparea-wrapper">
+                                <input type="file" id="birth-file" name="birth-file">
+                                <img src="assets/icons/cloud-upload.svg" alt="Icone de upload.">
+                                <p>
+                                    Clique aqui para <br>
+                                    selecionar os arquivos.
+                                </p>
+                            </div>
+                        </fieldset>
+                    </form>
+
                 </div>
             </div>
         </main>
