@@ -56,3 +56,22 @@ select {
     no-repeat calc(100% - 1rem);
     
 }
+
+.address .flex {
+    gap: 2.5rem;
+
+}
+
+.input-wrapper:has([disabled]){
+    opacity: 0.5;
+}
+
+input {
+    &[disabled] {
+        background-color: var(--surface-disabled);
+
+        border: 1px solid var(--stroke-default);
+
+        color: var(--text-primary);
+    }
+}
