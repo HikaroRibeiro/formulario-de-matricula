@@ -26,6 +26,7 @@
                     <p>Preencha os dados abaixo para matricular seu filho na esocla de educação infantil Estrelas do Amanhã.</p>
 
                     <form enctype="multipart/form-data" method="post">
+
                         <fieldset class="child-info">
                             <legend>Informações da Criança</legend>
 
@@ -140,6 +141,32 @@
                                 </div>
 
                             </div>
+                        </fieldset>
+
+                        <fieldset class="guardian">
+                            <legend>Informações do Responsável</legend>
+                            <div class="input-wrapper">
+                                <label for="guardian">Responsável</label>
+                                <input type="text" name="guardian" id="guardian" placeholder="Nome Completo do Responsável">
+                                <small>Principal responsável legal em caso de emergência.</small>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" name="phone" id="phone" placeholder="Telefone para Contato">
+                                <small>Inclua o código de área. Ex: (11) 91234-5678</small>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email" placeholder="E-mail" required>
+                                
+                                <div class="error">
+                                    <img src="assets/icons/alert-circle.svg" alt="Ícone de alerta vermelho.">
+                                    <span>Insira um e-mail válido.</span>
+                                </div>
+                            </div>
+
                         </fieldset>
                     </form>
 

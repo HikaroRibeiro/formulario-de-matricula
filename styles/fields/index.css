@@ -74,4 +74,33 @@ input {
 
         color: var(--text-primary);
     }
+    /* Caso o campo esteja invalidado */
+    &:invalid {
+        border: 0.125rem solid var(--semantic-error);
+    }
+
+    & + small {
+        display: inline-block;
+        margin-top: .25rem;
+        
+        font: var(--text-sm);
+        color: var(--text-small);
+    }
+
+    &[required] + .error {
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+
+        margin-top: .25rem;
+
+        font: var(--text-sm);
+        color: var(--semantic-error);
+        
+    }
+
+    /* A validação somente será realizada quando o campo perder o fócu. */
+    &:not(:focus):valid + .error {
+        display: none;
+    }
 }
